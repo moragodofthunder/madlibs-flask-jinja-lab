@@ -7,13 +7,18 @@
     <div class="madlib">
         
         <p>There once was a person named {{ subject }}
-            who used to run around {% for town in towns %}
-            <li>{{ town }}</li>{% endfor %} with a {{ noun }} 
-            that they painted {{ color }} strapped to their 
-            {% for bodypart in bodyparts %}<li>{{ bodypart }}</li>{% endfor %}.
+            who used to run around 
+            {% for town in towns %}
+            {{ town }}
+            {% endfor %} 
+            with a {{ noun }} that they painted {{ color }} strapped 
+            to their 
+            {% for bodypart in bodyparts %}
+            {{ bodypart }}
+            {% endfor %}.
 
             The townsfolk would cry "Why {{ subject }}, why?!"
-            And {{ subject }} would sing {{ adjective }} "It's fun
+            And {{ subject }} would sing {{ adverb }} "It's fun
             that I'm after, and so I cannot deny, that the most fun thing
             to do is run around town as am I!"</p>   
             

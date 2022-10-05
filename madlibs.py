@@ -67,7 +67,7 @@ def show_madlib():
     subject = request.args.get("person")
     color = request.args.get("colors")
     noun = request.args.get("nouns")
-    adjective = request.args.get("adjectives")
+    adverb = request.args.get("adverb")
     
     TOWNS = ["Berlin", "Budapest", "London", "Paris",
     "Prague", "Sao Paulo", "Krakow", "Honolulu"]
@@ -77,7 +77,8 @@ def show_madlib():
     towns = sample(TOWNS, 1)
     bodyparts = sample(BODYPARTS, 1)
 
-    return render_template("madlib.html", subject=subject, color=color, noun=noun, adjective=adjective, towns=towns, bodyparts=bodyparts)
+    return render_template("madlib.html", subject=subject, color=color, 
+    noun=noun, adverb=adverb, towns=towns, bodyparts=bodyparts)
 
 
 if __name__ == "__main__":
